@@ -1,5 +1,5 @@
 ---
-- name: Install Java, Gradle, maven, Mysql and spring boot
+- name: Install Java, Gradle, maven and spring boot
   hosts: all
   remote_user: root
   # remote_user: user
@@ -7,8 +7,6 @@
   # become_method: sudo
 
   roles:
-    - common
     - gradle
     - maven
     - springboot
-    - mysql
